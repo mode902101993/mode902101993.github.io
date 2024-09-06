@@ -3,196 +3,272 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightBlog</title>
+    <title>MoArc</title>
+    <style>
+        /* Main container for the project section */
+        .project-container {
+            display: flex;
+            align-items: center; /* Vertically center the image and text */
+            justify-content: space-around; /* Creates space between the image and text */
+            margin: 70px;
+            gap: 25px; /* Space between image and text */
+        }
+
+        /* Style for the image */
+        .project-container img {
+            width: 1000px; /* Set the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 0px; /* Optional rounded corners */
+            color:  rgba(255, 255, 255, 0.836);
+        }
+
+        /* Style for the text content */
+        .project-text {
+            max-width: 300px; /* Adjust the width of the text section */
+        }
+
+        /* Adjusting text size */
+        h2 {
+            text-align: center;
+            font-size: 2.5rem; /* Increased text size */
+            letter-spacing: 2px; /* Increased spacing between letters */
+        
+        }
+
+        h3 {
+            font-size: 2rem; /* Increased text size */
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        h4 {
+            font-size: 1.2rem; /* Increased text size */
+            margin-bottom: 20px;
+            color: #555;
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+
+        /* Footer link styling */
+        footer a {
+            text-decoration: none;
+            color: blue;
+            font-size: 1.2rem;
+        }
+
+        /* Footer styling */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1E1E1E;
+            padding: 20px 40px;
+            color: rgba(255, 255, 255, 0.836);
+        }
+
+        /* Social media icons */
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: rgba(255, 255, 255, 0.491);
+            font-size: 2rem;
+            text-decoration: none;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .project-container {
+                flex-direction: column; /* Stack the image and text vertically on small screens */
+                align-items: flex-start;
+            }
+
+            .project-container img {
+                width: 100%; /* Make the image responsive */
+            }
+        }
+    </style>
+
+    <!-- Load Font Awesome for social media icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <!-- the content of the header goes here -->
-         <h1 id="logo">BrightBlog</h1>
-         <nav>
+        <h1 id="logo">MoArc</h1>
+        <nav>
             <ul id="nav-ul">
-                <li>
-                    <a href="" class="navbutton">Home</a>
-                </li>
-                <li>
-                    <a href="" class="navbutton">About Us</a>
-                </li>
-                <li>
-                    <a href="" class="navbutton">Contact</a>
-                </li>
+                <li><a href="" class="navbutton">Home</a></li>
+                <li><a href="" class="navbutton">About Us</a></li>
+                <li><a href="" class="navbutton">Project</a></li>
+                <li><a href="" class="navbutton">Contact</a></li>
             </ul>
-         </nav>
+        </nav>
     </header>
-    <main>
-        <div id="main-content">
-            <aside>
-                <section>
-                    <h4>Filter by month</h4>
-                    <nav>
-                        <ul>
-                            <li><a href=""></a>Filter for January</li>
-                            <li><a href=""></a>Filter for February</li>
-                            <li><a href=""></a>Filter for March</li>
-                        </ul>
-                    </nav>
-                </section>
-                <section>
-                    <h4>Filter by category</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">Puppies</a></li>
-                            <li><a href=""></a>Goats</li>
-                            <li><a href=""></a>Sheep</li>
-                            <li><a href=""></a>Hedgehogs</li>
-                        </ul>
-                    </nav>
-                </section>
-             </aside>
-            <div>
-                <article>
-                    <header>
-                        Article's header goes
-                        <h2>Ten Amusing Facts About Dogs</h2>
-                        <h3>Read time: 5 minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit voluptas, dignissimos error quo adipisci unde. Exercitationem voluptatem modi, amet nostrum repudiandae corrupti reiciendis dignissimos omnis ad excepturi. Possimus voluptas facilis suscipit distinctio exercitationem vitae aliquid veritatis consectetur accusantium nobis sit fugit eius, similique dicta architecto rem modi tenetur quod dolores et nemo? Nostrum iste dolorum, nihil placeat consectetur velit necessitatibus impedit pariatur ut magnam sequi suscipit qui in sit saepe sapiente illum, enim atque nulla soluta illo. Praesentium, quas? Possimus reprehenderit repellat animi error totam neque. Minima, voluptates, vel voluptate sunt dolor laudantium in nihil optio numquam animi nulla dignissimos!</p>
-                        <blockquote>
-                            <cite>"I love puppies" Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima, vitae repellat quas at totam architecto suscipit exercitationem quisquam magni! Provident rem placeat est quisquam ab necessitatibus unde assumenda mollitia quasi nulla eum, ex excepturi aliquid perferendis expedita. Dolor quod officiis quisquam unde amet minima nemo fuga? Dolores sit aspernatur corrupti, voluptatum cum ipsum, magni aut repellendus qui natus accusamus eos ea maiores quasi mollitia repudiandae optio. Placeat officiis veniam porro vel repellat cumque impedit animi unde cum quas dolores similique voluptas corrupti consectetur nihil, minus autem sunt accusantium necessitatibus debitis. Ea aliquam, error maxime consequuntur architecto doloremque, itaque unde nostrum et ratione veniam fugit vero delectus sunt, sed temporibus tenetur totam rerum libero? Debitis iure voluptatum, non dolorem omnis sed? Dolore, autem sequi necessitatibus exercitationem, tempore porro enim a minima accusantium officiis maiores excepturi laborum. Repudiandae suscipit numquam voluptates dolore! Neque obcaecati nisi adipisci ipsam maxime suscipit, in inventore.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facere voluptas aut repellat quisquam id, numquam, maiores praesentium incidunt minus doloribus ducimus repellendus nesciunt reiciendis veniam consectetur rerum temporibus illo mollitia cumque! Voluptates sint deleniti alias a corporis! Placeat laborum quod temporibus facilis obcaecati reiciendis a rem minus assumenda incidunt in, ipsum dicta voluptatibus repellendus aliquam hic veritatis eaque numquam eum doloribus magni inventore. Animi nisi, quae reiciendis esse cupiditate quo libero eaque, adipisci corrupti voluptate officiis necessitatibus aliquam blanditiis.</p>
-                    </main>
-                    <footer>
-                        <h2>Author: Ibrahim Abdu</h2>
-                        <img src="https://placebear.com/100/100" alt="A profile picture of a bear">
-                        <h3>Last posted: 23-08-2024</h3>
-                        <a href="https://www.linkedin.com/in/ibrahim-abdu-a78312a9/" target="_blank">Author's profile</a>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        Article's header goes
-                        <h2>Ten Amusing Facts About Dogs</h2>
-                        <h3>Read time: 5 minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit voluptas, dignissimos error quo adipisci unde. Exercitationem voluptatem modi, amet nostrum repudiandae corrupti reiciendis dignissimos omnis ad excepturi. Possimus voluptas facilis suscipit distinctio exercitationem vitae aliquid veritatis consectetur accusantium nobis sit fugit eius, similique dicta architecto rem modi tenetur quod dolores et nemo? Nostrum iste dolorum, nihil placeat consectetur velit necessitatibus impedit pariatur ut magnam sequi suscipit qui in sit saepe sapiente illum, enim atque nulla soluta illo. Praesentium, quas? Possimus reprehenderit repellat animi error totam neque. Minima, voluptates, vel voluptate sunt dolor laudantium in nihil optio numquam animi nulla dignissimos!</p>
-                        <blockquote>
-                            <cite>"I love puppies" Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima, vitae repellat quas at totam architecto suscipit exercitationem quisquam magni! Provident rem placeat est quisquam ab necessitatibus unde assumenda mollitia quasi nulla eum, ex excepturi aliquid perferendis expedita. Dolor quod officiis quisquam unde amet minima nemo fuga? Dolores sit aspernatur corrupti, voluptatum cum ipsum, magni aut repellendus qui natus accusamus eos ea maiores quasi mollitia repudiandae optio. Placeat officiis veniam porro vel repellat cumque impedit animi unde cum quas dolores similique voluptas corrupti consectetur nihil, minus autem sunt accusantium necessitatibus debitis. Ea aliquam, error maxime consequuntur architecto doloremque, itaque unde nostrum et ratione veniam fugit vero delectus sunt, sed temporibus tenetur totam rerum libero? Debitis iure voluptatum, non dolorem omnis sed? Dolore, autem sequi necessitatibus exercitationem, tempore porro enim a minima accusantium officiis maiores excepturi laborum. Repudiandae suscipit numquam voluptates dolore! Neque obcaecati nisi adipisci ipsam maxime suscipit, in inventore.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facere voluptas aut repellat quisquam id, numquam, maiores praesentium incidunt minus doloribus ducimus repellendus nesciunt reiciendis veniam consectetur rerum temporibus illo mollitia cumque! Voluptates sint deleniti alias a corporis! Placeat laborum quod temporibus facilis obcaecati reiciendis a rem minus assumenda incidunt in, ipsum dicta voluptatibus repellendus aliquam hic veritatis eaque numquam eum doloribus magni inventore. Animi nisi, quae reiciendis esse cupiditate quo libero eaque, adipisci corrupti voluptate officiis necessitatibus aliquam blanditiis.</p>
-                    </main>
-                    <footer>
-                        <h2>Author: Ibrahim Abdu</h2>
-                        <img src="https://placebear.com/100/100" alt="A profile picture of a bear">
-                        <h3>Last posted: 23-08-2024</h3>
-                        <a href="https://www.linkedin.com/in/ibrahim-abdu-a78312a9/" target="_blank">Author's profile</a>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        Article's header goes
-                        <h2>Ten Amusing Facts About Dogs</h2>
-                        <h3>Read time: 5 minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit voluptas, dignissimos error quo adipisci unde. Exercitationem voluptatem modi, amet nostrum repudiandae corrupti reiciendis dignissimos omnis ad excepturi. Possimus voluptas facilis suscipit distinctio exercitationem vitae aliquid veritatis consectetur accusantium nobis sit fugit eius, similique dicta architecto rem modi tenetur quod dolores et nemo? Nostrum iste dolorum, nihil placeat consectetur velit necessitatibus impedit pariatur ut magnam sequi suscipit qui in sit saepe sapiente illum, enim atque nulla soluta illo. Praesentium, quas? Possimus reprehenderit repellat animi error totam neque. Minima, voluptates, vel voluptate sunt dolor laudantium in nihil optio numquam animi nulla dignissimos!</p>
-                        <blockquote>
-                            <cite>"I love puppies" Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minima, vitae repellat quas at totam architecto suscipit exercitationem quisquam magni! Provident rem placeat est quisquam ab necessitatibus unde assumenda mollitia quasi nulla eum, ex excepturi aliquid perferendis expedita. Dolor quod officiis quisquam unde amet minima nemo fuga? Dolores sit aspernatur corrupti, voluptatum cum ipsum, magni aut repellendus qui natus accusamus eos ea maiores quasi mollitia repudiandae optio. Placeat officiis veniam porro vel repellat cumque impedit animi unde cum quas dolores similique voluptas corrupti consectetur nihil, minus autem sunt accusantium necessitatibus debitis. Ea aliquam, error maxime consequuntur architecto doloremque, itaque unde nostrum et ratione veniam fugit vero delectus sunt, sed temporibus tenetur totam rerum libero? Debitis iure voluptatum, non dolorem omnis sed? Dolore, autem sequi necessitatibus exercitationem, tempore porro enim a minima accusantium officiis maiores excepturi laborum. Repudiandae suscipit numquam voluptates dolore! Neque obcaecati nisi adipisci ipsam maxime suscipit, in inventore.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facere voluptas aut repellat quisquam id, numquam, maiores praesentium incidunt minus doloribus ducimus repellendus nesciunt reiciendis veniam consectetur rerum temporibus illo mollitia cumque! Voluptates sint deleniti alias a corporis! Placeat laborum quod temporibus facilis obcaecati reiciendis a rem minus assumenda incidunt in, ipsum dicta voluptatibus repellendus aliquam hic veritatis eaque numquam eum doloribus magni inventore. Animi nisi, quae reiciendis esse cupiditate quo libero eaque, adipisci corrupti voluptate officiis necessitatibus aliquam blanditiis.</p>
-                    </main>
-                    <footer>
-                        <h2>Author: Ibrahim Abdu</h2>
-                        <img src="https://placebear.com/100/100" alt="A profile picture of a bear">
-                        <h3>Last posted: 23-08-2024</h3>
-                        <a href="https://www.linkedin.com/in/ibrahim-abdu-a78312a9/" target="_blank">Author's profile</a>
-                    </footer>
-                </article>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MoArc Project</title>
+        <style>
+            /* Flexbox container to position image and text side by side */
+            .project-container {
+                display: flex;
+                align-items: center; /* Vertically aligns image and text */
+                justify-content: space-between; /* Ensures space between image and text */
+                gap: 20px; /* Space between the image and text */
+                margin: 20px;
+            }
+    
+            /* Style for the image */
+            .project-container img {
+                width: 400px; /* Set a width for the image */
+                height: auto; /* Maintain aspect ratio */
+            }
+    
+            /* Style for the text */
+            .project-text {
+                max-width: 600px; /* Limit the width of the text section */
+                text-align: left;
+            }
+    
+            /* Heading and paragraph styles */
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+    
+            h4 {
+                font-size: 1.2rem;
+                color: #555;
+                margin-bottom: 20px;
+            }
+    
+            /* Styling the 'More detail' link */
+            .project-text a {
+                text-decoration: none;
+                color: blue;
+                font-size: 1.1rem;
+            }
+    
+            /* Move image to the left for odd project containers (first, third, fifth) */
+            .project-container:nth-child(odd) {
+                flex-direction: row-reverse; /* Reverse the direction to move image to the left and text to the right */
+            }
+    
+            /* Responsive layout for smaller screens */
+            @media (max-width: 768px) {
+                .project-container {
+                    flex-direction: column; /* Stack the image and text vertically on small screens */
+                    align-items: flex-start; /* Align the items to the left */
+                }
+    
+                .project-container img {
+                    width: 100%; /* Make the image responsive */
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+    <article>
+        <header>
+            <h2>PROJECTS</h2>
+        </header>
+    
+        <!-- First Project (Skyflow Tower - Image on Left) -->
+        <main class="project-container">
+            <div class="project-text">
+                <h3>The Skyflow Tower</h3>
+                <h4>
+                    A futuristic skyscraper with organic, flowing lines and rooftop gardens, designed to blend seamlessly into a vibrant urban environment. Its glass and steel facade reflects the sunlight, showcasing an innovative and eco-friendly structure.
+                </h4>
+                <a href="https://www.linkedin.com/in/ibrahim-abdu-a78312a9/" target="_blank">More detail</a>
             </div>
-            
-            <!-- the main content of the website goes here -->
+            <img src="">
+        </main>
+    
+        <!-- Second Project (Prism Spire - Image on Right) -->
+        <main class="project-container">
+            <div class="project-text">
+                <h3>Prism Spire</h3>
+                <h4>
+                    A sleek, asymmetrical high-rise with mirrored windows and sharp angular designs, standing out as a modern architectural marvel against a sunset-lit city backdrop.
+                </h4>
+                <a href="https://www.linkedin.com/in/ibrahim-abdu-a78312a9/" target="_blank">More detail</a>
+            </div>
+            <img src="">
+        </main>
+    
+        <!-- Third Project (Green Spiral Haven - Image on Left) -->
+        <main class="project-container">
+            <div class="project-text">
+                <h3>Green Spiral Haven</h3>
+                <h4>
+                    An eco-friendly spiral-shaped building covered in vertical gardens and solar panels, designed to integrate sustainability and cutting-edge technology in an urban green space.
+                </h4>
+                <a href="https://www.linkedin.com/in/ibrahim-abdu-a78312a9/" target="_blank">More detail</a>
+            </div>
+            <img src="">
+        </main>
+    
+        <!-- Fourth Project (Wavecrest Tower - Image on Right) -->
+        <main class="project-container">
+            <div class="project-text">
+                <h3>Wavecrest Tower</h3>
+                <h4>
+                    A luxury residential skyscraper featuring wave-like balconies and glowing exterior lighting, offering a serene and elegant design that flows seamlessly into the city skyline at dusk.
+                </h4>
+                <a href="https://www.linkedin.com/in/ibrahim-abdu-a78312a9/" target="_blank">More detail</a>
+            </div>
+            <img src="" alt="the skyflow tower">
+        </main>
+    
+        <!-- Fifth Project (Geovista Complex - Image on Left) -->
+        <main class="project-container">
+            <div class="project-text">
+                <h3>Geovista Complex</h3>
+                <h4>
+                    A striking commercial building with a bold glass facade and geometric shapes, incorporating green spaces into its modern design to blend innovation with urban functionality.
+                </h4>
+                <a href="https://www.linkedin.com/in/ibrahim-abdu-a78312a9/" target="_blank">More detail</a>
+            </div>
+            <img src="">
+        </main>
+    
+    </article>
+    
+    </body>
+    </html>
+    
 
-        </div>
-       
-
-         <hr>
-         <h2>Sign up for our newsletter</h2>
-         <form action="">
-            <label for="first_name">First Name:</label>
-            <input type="text"  id="first_name" name="first_name"   required>
-            <br>
-
-            <label for="last_name">Last Name:</label>
-            <input type="text"  id="last_name" name="last_name"   required>
-            <br>
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <br>
-
-            <label for="password">Password</label>
-            <input type="password" name="password"  id="password">
-            <br>
-
-            <label for="favourite animal">Favourite Animal</label>
-            <input type="radio" name="favourite animal" id="dog"    value="dog">
-            <label for="dog">Dog</label>
-            <input type="radio" name="favourite animal" id="cat"    value="cat">
-            <label for="cat">Cat</label>
-            <input type="radio" name="favourite animal" id="hedgehog"    value="hedgehog">
-            <label for="hedgehog">Hedgehog</label>
-            <br>
-
-            <label for="country">Country:</label>
-            <select name="country" id="country">
-                <option value="england">England</option>
-                <option value="scotland">Scotland</option>
-                <option value="wales">Wales</option>
-                <option value="northern ireland">North Ireland</option>
-            </select>
-            <br>
-
-            <label for="bio">Biography</label>
-            <textarea name="bio" id="bio"   cols="30"   rows="5"></textarea>
-
-            <input type="checkbox"  id="subscribe"  name="subscribe">
-            <label for="subscribe">Subscribe to our newsletter!</label>
-            <br>
-
-            <input type="submit" value="Send!">
-
-        </form>
-        <hr>      
-
-    </main>
     <footer>
-        <!-- the footer goes here -->
-         <h2>BrightBlogSite</h2>
-         <section>
+        <h2>MoArc</h2>
+        <section>
             <nav>
                 <ul id="footer-ul">
                     <div>
-                        <li><a href=""></a>Home</li>
-                        <li><a href=""></a>About</li>
-                        <li><a href=""></a>Contact</li>    
-                    </div>
-                    <div>
-                        <li><a href=""></a>Privacy</li>
-                        <li><a href=""></a>Terms and conditions</li>
-                        <li><a href=""></a>Career</li>
-                        <li><a href=""></a>Cookies policy</li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Project</a></li>
+                        <li><a href="">Contact</a></li>
                     </div>
                 </ul>
             </nav>
-         </section>
+        </section>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 </body>
 </html>
